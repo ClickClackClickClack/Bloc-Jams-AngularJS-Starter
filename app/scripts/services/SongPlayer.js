@@ -37,7 +37,7 @@
              currentBuzzObject.stop();
              song.playing = null;
           };
-          
+
           /**
            * @function setSong
            * @desc Stops currently playing song and loads new audio file as currentBuzzObject
@@ -133,7 +133,7 @@
            SongPlayer.next = function() {
              var currentSongIndex = getSongIndex(SongPlayer.currentSong);
              currentSongIndex++;
-             if(currentSongIndex > currentAlbum.songs.length){
+             if(currentSongIndex > (currentAlbum.songs.length)){
                  stopSong(song);
              } else {
                  var song = currentAlbum.songs[currentSongIndex];
