@@ -101,6 +101,7 @@
           SongPlayer.play = function(song) {
             song = song || SongPlayer.currentSong;
             if (SongPlayer.currentSong !== song) {
+              
               setSong(song);
               playSong(song);
 
